@@ -47,7 +47,7 @@ class _TemperatureConverterState extends State<TemperatureConverter> {
     }
 
     setState(() {
-      _result = convertedValue.toStringAsFixed(2);
+      _result = convertedValue.toStringAsFixed(1);
       _history.add('$_selectedConversion: ${inputValue.toStringAsFixed(1)} => $_result');
     });
   }
